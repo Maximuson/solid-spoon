@@ -104,6 +104,7 @@ header > .logo > h2{
     line-height: 12px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    height: 14px;
 }
 .text-gray-p{
     color: #81868e;
@@ -114,13 +115,45 @@ header > .logo > h2{
     /* Text style for "A, t vero" */
     letter-spacing: 0.7px;
 }
-#about-first{
+#about-first, #about-second{
     display: flex;
     align-items: center;
     padding: 5% 15%;
 }
 #about-first img{
     margin: 0 15%;
+}
+#about-second{
+    background: #f3f3f3;
+    flex-direction: column;
+}
+.center-h{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+#about-second .text-gray-p{
+    margin: 40px 0;
+}
+.icon-circle, .icon-circle__green, .icon-circle__gray{
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+}
+.icon-circle__green{
+    background-color: #19bd9a;
+}
+.icon-circle__gray{
+    background-color: #81868e;
+}
+#about-second .icons{
+    display: flex;
+    justify-content: center;
+}
+#about-second .icons > div{
+    margin: 0 3%;
 }
 @media (max-width:650px) {
     header> nav > ul >li{
