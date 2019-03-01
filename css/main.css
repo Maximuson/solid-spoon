@@ -115,7 +115,7 @@ header > .logo > h2{
     /* Text style for "A, t vero" */
     letter-spacing: 0.7px;
 }
-#about-first, #about-second{
+#about-first, #services{
     display: flex;
     align-items: center;
     padding: 5% 15%;
@@ -123,7 +123,7 @@ header > .logo > h2{
 #about-first img{
     margin: 0 15%;
 }
-#about-second{
+#services{
     background: #f3f3f3;
     flex-direction: column;
 }
@@ -134,10 +134,13 @@ header > .logo > h2{
     text-align: center;
 
 }
-#about-second .text-gray-p{
+#services .text-gray-p{
     margin: 40px 0;
 }
 .icon-circle, .icon-circle__green, .icon-circle__gray{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 53px;
     height: 53px;
     border-radius: 50%;
@@ -148,13 +151,123 @@ header > .logo > h2{
 .icon-circle__gray{
     background-color: #81868e;
 }
-#about-second .icons{
+#services .icons{
     display: flex;
     justify-content: center;
 }
-#about-second .icons > div{
+#services .icons > div{
     margin: 0 3%;
 }
+.bottom__title--text{
+    display: flex;
+
+}
+span.green{
+    color: #19bd9a;
+    font-family: "Open Sans - Bold", "sans-serif";
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+span.gray{
+    color: #636971;
+    font-family: "Open Sans - Bold";
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+.mrTop{
+    margin-top: 50px;
+}
+#services .text-gray-p.space-right{
+    margin-right: 5%;
+}
+#portfolio .center-h{
+    padding: 5%;
+}
+#portfolio .center-h p {
+    margin: 20px 0 0 0;
+}
+.portfolio-3photos{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    background: black;
+    
+}
+.portfolio-3photos p {
+    z-index: 1;
+}
+.portfolio-3image_1{
+    height: 319px;
+    background: url('../imgs/images3_1.png') no-repeat center;
+}
+.portfolio-3image_2{
+    height: 319px;
+    background: url('../imgs/images3_2.png') no-repeat center;
+    opacity: 0.85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-3image_3{
+    height: 319px;
+    background: url('../imgs/images3_3.png') no-repeat center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio-3photos .white{
+    color: white;
+}
+#shadow-3images{
+    position: absolute;
+    width: 50%;
+    height: 319px;
+    right: 0;
+}
+
+/*  Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .bottom__title--text{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+    .bottom__title--text{
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    
+}
+
+@media (max-width: 991.98px){
+    #about-first{
+        flex-direction: column;
+        text-align: center;
+}
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}
+
+
 @media (max-width:650px) {
     header> nav > ul >li{
         margin: 40px 0;
